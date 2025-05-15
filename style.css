@@ -1,0 +1,130 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #00ffff;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00ffff;
+}
+
+/* Home Section */
+section.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 80px 60px;
+  background-color: #111;
+  min-height: 100vh;
+}
+
+.Home-img img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.Home-content {
+  max-width: 600px;
+  margin-left: 50px;
+}
+
+.Home-content h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.Home-content h1 span {
+  color: #00ffff;
+}
+
+.Home-content p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* Social Icons - placeholder */
+.Social-icons {
+  margin-top: 20px;
+}
+
+/* Call-to-Action Buttons */
+div > a {
+  display: inline-block;
+  margin: 30px 15px;
+  padding: 12px 28px;
+  background-color: #00ffff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+div > a:hover {
+  background-color: #00cccc;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section.Home {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .Home-content {
+    margin: 30px 0 0 0;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+}
